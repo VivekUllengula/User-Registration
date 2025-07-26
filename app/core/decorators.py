@@ -2,7 +2,7 @@ import time
 from functools import wraps
 from fastapi.responses import JSONResponse
 
-def log_executin_time(func):
+def log_execution_time(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         start = time.time()
